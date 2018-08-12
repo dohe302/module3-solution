@@ -10,8 +10,7 @@ h1 {
 }
 
 body {
-  background-image: url("background.jpg");
-  background-color: #FEF5CA;
+  background-color: #f1f441;
 
 }
 
@@ -31,7 +30,7 @@ p {
 
 section {
   border: 1px solid black;
-  background-color: #00FF99;
+  background-color: #f4a142;
   width: 100%;
   height: auto;
   font-family: Helvetica;
