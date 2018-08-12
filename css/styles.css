@@ -1,173 +1,141 @@
-body {
-  font-size: 16px;
-  color: #fff;
-  background-color: rgb(0, 250, 250);
-  font-family: 'Oxygen', sans-serif;
-}
+/* Base Styles */
+
 * {
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-  margin-bottom: 30px;
+  font-family: Brushstroke, fantasy;
+  color: #000000;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-color: #FEF5CA;
+
 }
 
 p {
-  padding: 15px 25px 0px 25px;
-  font-family: Georgia sans-serif;
-  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+section {
+  border: 1px solid black;
+  background-color: #00FF99;
+  width: 100%;
+  height: auto;
+  font-family: Helvetica;
+  color: black;
   position: relative;
-  color: rgb(0, 0, 0);
+  overflow: auto;
 }
 
-.section { 
-  background-color: rgb(100, 100, 100);
-    border: 2px solid black;
-    margin-top: 20px; 
-    margin-left: 30px;
-    margin-right: 0px; 
-    padding: 3px;
-    text-align: justify;
-    position: relative;
- }
-
-span {
-  font-size: 20px;
-  width: 100%;
-  font-weight: bold;
+#chicken {
+  border: 1px solid black;
   text-align: center;
+  width: 30%;
+  margin-left: 70%;
+  font-family: Georgia,sans-serif;
+  font-weight: bold;
+  font-size: 125%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #FFFF00;
 }
 
-#nr1  {
-  color: rgb(0, 0, 0);
-  width: 100%;
-  font-size: 20px;
-  font-weight: bold;
+#beef {
+  border: 1px solid black;
   text-align: center;
-}
-#nr2 {
-  color: rgb(0, 0, 0);
-  width: 100%;
-  font-size: 20px;
+  width: 30%;
+  margin-left: 70%;
+  font-family: Georgia,sans-serif;
   font-weight: bold;
-  text-align: center;
-}
-#nr3 {
-  color: rgb(0, 0, 0);
-  width: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
+  font-size: 125%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+  background-color: #FF1439;
 }
 
-.row {
-  width: 100%;
+#sushi {
+  border: 1px solid black;
+  text-align: center;
+  width: 30%;
+  margin-left: 70%;
+  font-family: Georgia,sans-serif;
+  font-weight: bold;
+  font-size: 125%;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #6495ED;
+  color: white;
+  padding: 5px;
 }
-/* HEADER */
-#header-nav {
-  background-color: rgb(250,250,250);
-  border-radius: 0;
-  border: 0;
-  overflow: hidden;
+
+#chicken-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#beef-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#sushi-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .navbar-brand {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.navbar-brand h1 { /* Company's name */
-  font-family: 'Lora', serif; 
-  color: rgb(0,0,0);
-  font-size: 1.8em;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 20px;
-  line-height: .75;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-.navbar-brand h2 { /* Our Menu */
-  color: #000;
-  font-weight: bold;
-  font-size: .7em;
-  text-align: center;
-  margin-top: 15px;
+  font-size: 2em;
+  border: 0 0 10px 10px;
+  color: #FFFFFF;
 }
 
-#nav-list {  /* #nav-list is the <ul> under the navbar section */
-  margin-top: 10px;
-}
-#nav-list a { /* this is for link/glyphicon color and aligning to center */
-  color: rgb(0,0,0);
-  font-weight: bold;
-  text-align: center;
-  border: 1px solid black;
-  background-color: rgb(200,200,200);
-}
-#nav-list a:hover { /* this is for changing mouse pointer when it goes over glyphicon */
-  background: #E7E7E7;
-}
-#nav-list a span { /* for font options of navigation list elements */
-  font-size: 1.2em;
-}
-
-p .text-center {
-  margin-top: 30px;
+#header-nav {
+  border: 0;
+  background-color: #FC5F06;
+  color: #FFFFFF;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid rgb(15,200,90);
+  border: 1px solid #61122f;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px; /* This is for 'Computers' message to be in the top part, to override 'float' collapsing feature */
+  margin-top: -30px;
 }
-/* END HEADER */
 
-@media (min-width: 1200px) {
-#header-nav {
-  height: 70px;
+.nav-header {
+  background-color: #FFFFFF;
 }
-.navbar-brand {
-    padding-top: 10px;
-    height: 70px;
-    border-bottom: 20px;
-    } 
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-#header-nav {
-    padding-top: 10px;
-    height: 70px; 
-    }  
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #header-nav {
-    padding-top: 10px;
-    height: 70px; 
-    }
-  }
-  }
-/********** Extra small devices only **********/
 
-@media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 70px;
-  }
-
-  .navbar-brand h1 { /* Company's name */
-    padding-top: 10px;
-  }
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
+.nav-brand {
+  color: #FFFFFF;
+  font-size: 1.5em;
 }
-/* End Header */
+
+#nav-list {
+  color: white;
+}
+
+hr {
+  border-color: white;
+}
+
+.item {
+  color: white;
+  font-size: 1.2em;
+}
